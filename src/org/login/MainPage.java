@@ -6,7 +6,7 @@ import java.util.TreeMap;
 public class MainPage extends MethodPage {
 	 int i;
 	
-	 static TreeMap<String, Details> value;
+	 static TreeMap<String, Details> values;
 		
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
@@ -15,11 +15,11 @@ public class MainPage extends MethodPage {
 			System.out.print("Enter 1 for New User Creation and 0 for existing user and greater than 1 for exit: ");
 			m.i = s.nextInt();
 			if(m.i == 1) {
-			    value = m.addNewUser();
+			    values = m.addNewUser();
 			    //m.displayDetails(value);
 			}
 			else if(m.i == 0) {
-				m.checkUserInput(value);	
+				m.checkUserInput(values);	
 			}
 		} while (m.i == 1 || m.i == 0);
 			
