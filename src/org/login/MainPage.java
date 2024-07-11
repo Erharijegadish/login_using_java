@@ -16,7 +16,7 @@ public class MainPage extends MethodPage {
 			m.i = s.nextInt();
 			if(m.i == 1) {
 			    values = m.addNewUser();
-			    //m.displayDetails(value);
+			    //m.displayDetails(values);
 			}
 			else if(m.i == 0) {
 				m.checkUserInput(values);	
